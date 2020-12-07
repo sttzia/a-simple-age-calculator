@@ -1,20 +1,70 @@
-<html>
+<!DOCTYPE html>
+<html lang="">
+
 <head>
-    <title>TT360 Age Calculator</title>
-	<link rel='stylesheet' href='style.css'/>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src='script.js'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="main_container">
-        <div id="birth_date_input">Birth Date*: <input type="date" id="birth_date"></div>
-        <br/>
-        <div id="calculate">Calculate your age**</div>
-        
-        <div id="age_container"><span id="exact_age">Age</span></div>
-        <p><em>* The year here is 365 days and the month here is 30 days, that means your birthday may not mean you will be 0 days old.</br>  
-        **PLEASE LIKE SHARE AND SUBSCRIBE.</em></p>
-        </p>
+
+    <div class="container-fluid bbg">
+        <div class="main-container container">
+
+            <div class="head">
+                <h1 class="main-heading">Age Calculator</h1>
+            </div>
+
+            <div class="sub-container">
+                <div class="inner">
+                    <div class="dateofbirth">
+                        <span id="dob">Date of Birth </span>
+                        <input type="date" id="dateStart" />
+                        <br>
+                    </div>
+                    <div class="todaydate">
+                        <span id="db">Age at the Date</span>
+                        <input type="date" id="dateEnd" />
+                    </div>
+
+                    <input type="button" id="btn" value="Calculate Age" />
+                </div>
+            </div>
+
+            <div class="container-fluid second">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="contain" id="year">
+                            <h1 class="heading1" id="showYears">0</h1>
+                            <h3 class="heading2">Years</h3>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="contain" id="month">
+                            <h1 class="heading1" id="showMonths">0</h1>
+                            <h3 class="heading2">Months</h3>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="contain" id="days">
+                            <h1 class="heading1" id="showDays">0</h1>
+                            <h3 class="heading2">Days</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <script src="app.js"></script>
 </body>
+
 </html>
